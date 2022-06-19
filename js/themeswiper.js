@@ -1,4 +1,3 @@
-
 function setTheme(themeName){
     localStorage.setItem('theme', themeName);
     document.documentElement.className = themeName;
@@ -6,7 +5,7 @@ function setTheme(themeName){
 
 function toggleTheme(){
     localStorage.getItem('theme') === 'dark-mode' ?
-        setTheme('white-mode') :
+        setTheme('light-mode') :
         setTheme('dark-mode');
 }
 
@@ -16,7 +15,7 @@ function toggleTheme(){
         document.getElementById('slider').checked = false;
     }
     else{
-        setTheme('white-mode');
+        setTheme('light-mode');
         document.getElementById('slider').checked = false;
     }
 })
